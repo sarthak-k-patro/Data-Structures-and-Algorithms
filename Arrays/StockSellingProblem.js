@@ -24,3 +24,22 @@
 
 // console.log(maxProfit);
 // -----------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------==================================-------------------------------------
+// Correct Approach for finding max profit for buy and sell of stock
+// -----------------------------------------------------------------------------------------------------------------------
+// const arr = [7, 5, -6, 300, 40];
+const arr = [3, 2, 6, 1, 4];
+let solArr = [];
+let profits = 0;
+for (let index = 0; index < arr.length; index++) {
+  for (let jIndex = index + 1; jIndex < arr.length; jIndex++) {
+    if (arr[index] < arr[jIndex]) {
+      profits = arr[jIndex] - arr[index];
+      solArr.push(profits);
+    }
+  }
+}
+solArr.sort((a, b) => a - b);
+const len = solArr.length;
+console.log(solArr);
+console.log(solArr[len - 1]);
