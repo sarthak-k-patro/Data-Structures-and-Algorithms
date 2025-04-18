@@ -11,3 +11,20 @@ const findStudent = (arr, toFind) => {
 };
 
 findStudent(arr, "Sarthak4");
+
+// Basic array types
+const strArr = ["a", "b", "c", "d"];
+const numArr = [1, 2, 3, 4];
+const mixArr = [
+  1,
+  2,
+  "sarthak",
+  3,
+  4,
+  true,
+  undefined,
+  null,
+  { a: "value" },
+  ["abc"],
+];
+console.log("mix arr : ", mixArr);
