@@ -24,11 +24,18 @@ class LinkedList {
     while (current) {
       current = current.next;
     }
-    current.next = newNode;
+    current = newNode;
   }
 }
 
 obj1LinkedList = new LinkedList();
+obj1LinkedList.addFirst(1);
 obj1LinkedList.addAtEnd(170);
+obj1LinkedList.addFirst(1);
+obj1LinkedList.addAtEnd(170);
+obj1LinkedList.addAtEnd(170);
+obj1LinkedList.addAtEnd(170);
+obj1LinkedList.addAtEnd(170);
+obj1LinkedList.addFirst(1);
 obj1LinkedList.addFirst(1);
 console.log(obj1LinkedList);
